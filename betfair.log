@@ -133,3 +133,695 @@
 26-Mar 18:05 - INFO - session.py - get_status - retrieving login status
 26-Mar 18:05 - INFO - session.py - login_session - logging in
 26-Mar 18:05 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:20 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:20 - INFO - session.py - login_session - logging in
+26-Mar 18:20 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:20 - INFO - session.py - login_session - logging in
+26-Mar 18:20 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:20 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:20 - INFO - session.py - login_session - logging in
+26-Mar 18:20 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:20 - INFO - session.py - login_session - logging in
+26-Mar 18:20 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:28 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:28 - INFO - session.py - login_session - logging in
+26-Mar 18:28 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:28 - INFO - session.py - login_session - logging in
+26-Mar 18:28 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:28 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:28 - INFO - session.py - login_session - logging in
+26-Mar 18:28 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:28 - INFO - session.py - login_session - logging in
+26-Mar 18:28 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:36 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:36 - INFO - session.py - login_session - logging in
+26-Mar 18:36 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:36 - INFO - session.py - login_session - logging in
+26-Mar 18:36 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:36 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:36 - INFO - session.py - login_session - logging in
+26-Mar 18:36 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:36 - INFO - session.py - login_session - logging in
+26-Mar 18:36 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:46 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:46 - INFO - session.py - login_session - logging in
+26-Mar 18:46 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:46 - INFO - session.py - login_session - logging in
+26-Mar 18:46 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:46 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:46 - INFO - session.py - login_session - logging in
+26-Mar 18:46 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:46 - INFO - session.py - login_session - logging in
+26-Mar 18:46 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:46 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:46 - INFO - session.py - login_session - logging in
+26-Mar 18:46 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:46 - INFO - session.py - login_session - logging in
+26-Mar 18:46 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:46 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:46 - INFO - session.py - login_session - logging in
+26-Mar 18:46 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:46 - INFO - session.py - login_session - logging in
+26-Mar 18:46 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:47 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:47 - INFO - session.py - login_session - logging in
+26-Mar 18:47 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:47 - INFO - session.py - login_session - logging in
+26-Mar 18:47 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:47 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:47 - INFO - session.py - login_session - logging in
+26-Mar 18:47 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:47 - INFO - session.py - login_session - logging in
+26-Mar 18:47 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:49 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:49 - INFO - session.py - login_session - logging in
+26-Mar 18:49 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:49 - INFO - session.py - login_session - logging in
+26-Mar 18:49 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:49 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:49 - INFO - session.py - login_session - logging in
+26-Mar 18:49 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:49 - INFO - session.py - login_session - logging in
+26-Mar 18:49 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:50 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:50 - INFO - session.py - login_session - logging in
+26-Mar 18:50 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:50 - INFO - session.py - login_session - logging in
+26-Mar 18:50 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:50 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:50 - INFO - session.py - login_session - logging in
+26-Mar 18:50 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:50 - INFO - session.py - login_session - logging in
+26-Mar 18:50 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:51 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:51 - INFO - session.py - login_session - logging in
+26-Mar 18:51 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:51 - INFO - session.py - login_session - logging in
+26-Mar 18:51 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:51 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:51 - INFO - session.py - login_session - logging in
+26-Mar 18:51 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:51 - INFO - session.py - login_session - logging in
+26-Mar 18:51 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:51 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:51 - INFO - session.py - login_session - logging in
+26-Mar 18:51 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:51 - INFO - session.py - login_session - logging in
+26-Mar 18:51 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:51 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:51 - INFO - session.py - login_session - logging in
+26-Mar 18:51 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:51 - INFO - session.py - login_session - logging in
+26-Mar 18:51 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:51 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:51 - INFO - session.py - login_session - logging in
+26-Mar 18:51 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:51 - INFO - session.py - login_session - logging in
+26-Mar 18:51 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:55 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:55 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:55 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:55 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:55 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:55 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:55 - INFO - session.py - login_session - logging in
+26-Mar 18:55 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:56 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:56 - INFO - session.py - login_session - logging in
+26-Mar 18:56 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:56 - INFO - session.py - login_session - logging in
+26-Mar 18:56 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:56 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:56 - INFO - session.py - login_session - logging in
+26-Mar 18:56 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:56 - INFO - session.py - login_session - logging in
+26-Mar 18:56 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:57 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:57 - INFO - session.py - login_session - logging in
+26-Mar 18:57 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:57 - INFO - session.py - login_session - logging in
+26-Mar 18:57 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:57 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:57 - INFO - session.py - login_session - logging in
+26-Mar 18:57 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:57 - INFO - session.py - login_session - logging in
+26-Mar 18:57 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:58 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:58 - INFO - session.py - login_session - logging in
+26-Mar 18:58 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:58 - INFO - session.py - login_session - logging in
+26-Mar 18:58 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:58 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:58 - INFO - session.py - login_session - logging in
+26-Mar 18:58 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:58 - INFO - session.py - login_session - logging in
+26-Mar 18:58 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 18:58 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:58 - INFO - session.py - login_session - logging in
+26-Mar 18:58 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:58 - INFO - session.py - login_session - logging in
+26-Mar 18:58 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:58 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:58 - INFO - session.py - login_session - logging in
+26-Mar 18:58 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:58 - INFO - session.py - login_session - logging in
+26-Mar 18:59 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 18:59 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 18:59 - INFO - session.py - login_session - logging in
+26-Mar 18:59 - INFO - session.py - get_status - retrieving login status
+26-Mar 18:59 - INFO - session.py - login_session - logging in
+26-Mar 18:59 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:01 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:01 - INFO - session.py - login_session - logging in
+26-Mar 19:01 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:01 - INFO - session.py - login_session - logging in
+26-Mar 19:01 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:01 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:01 - INFO - session.py - login_session - logging in
+26-Mar 19:01 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:01 - INFO - session.py - login_session - logging in
+26-Mar 19:02 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:08 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:08 - INFO - session.py - login_session - logging in
+26-Mar 19:08 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:08 - INFO - session.py - login_session - logging in
+26-Mar 19:08 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:08 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:08 - INFO - session.py - login_session - logging in
+26-Mar 19:08 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:08 - INFO - session.py - login_session - logging in
+26-Mar 19:08 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:10 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:10 - INFO - session.py - login_session - logging in
+26-Mar 19:10 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:10 - INFO - session.py - login_session - logging in
+26-Mar 19:10 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:10 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:10 - INFO - session.py - login_session - logging in
+26-Mar 19:10 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:10 - INFO - session.py - login_session - logging in
+26-Mar 19:10 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:12 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:12 - INFO - session.py - login_session - logging in
+26-Mar 19:12 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:12 - INFO - session.py - login_session - logging in
+26-Mar 19:12 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:12 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:12 - INFO - session.py - login_session - logging in
+26-Mar 19:12 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:12 - INFO - session.py - login_session - logging in
+26-Mar 19:12 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:16 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:16 - INFO - session.py - login_session - logging in
+26-Mar 19:16 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:16 - INFO - session.py - login_session - logging in
+26-Mar 19:16 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:16 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:16 - INFO - session.py - login_session - logging in
+26-Mar 19:16 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:16 - INFO - session.py - login_session - logging in
+26-Mar 19:16 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:22 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:22 - INFO - session.py - login_session - logging in
+26-Mar 19:22 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:22 - INFO - session.py - login_session - logging in
+26-Mar 19:22 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:22 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:22 - INFO - session.py - login_session - logging in
+26-Mar 19:22 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:22 - INFO - session.py - login_session - logging in
+26-Mar 19:22 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:23 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:23 - INFO - session.py - login_session - logging in
+26-Mar 19:23 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:23 - INFO - session.py - login_session - logging in
+26-Mar 19:23 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:23 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:23 - INFO - session.py - login_session - logging in
+26-Mar 19:23 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:23 - INFO - session.py - login_session - logging in
+26-Mar 19:23 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:24 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:24 - INFO - session.py - login_session - logging in
+26-Mar 19:24 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:24 - INFO - session.py - login_session - logging in
+26-Mar 19:24 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:24 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:24 - INFO - session.py - login_session - logging in
+26-Mar 19:24 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:24 - INFO - session.py - login_session - logging in
+26-Mar 19:24 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:25 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:25 - INFO - session.py - login_session - logging in
+26-Mar 19:25 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:25 - INFO - session.py - login_session - logging in
+26-Mar 19:25 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:25 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:25 - INFO - session.py - login_session - logging in
+26-Mar 19:25 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:25 - INFO - session.py - login_session - logging in
+26-Mar 19:25 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:27 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:27 - INFO - session.py - login_session - logging in
+26-Mar 19:27 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:27 - INFO - session.py - login_session - logging in
+26-Mar 19:27 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:27 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:27 - INFO - session.py - login_session - logging in
+26-Mar 19:27 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:27 - INFO - session.py - login_session - logging in
+26-Mar 19:27 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:30 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:30 - INFO - session.py - login_session - logging in
+26-Mar 19:30 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:30 - INFO - session.py - login_session - logging in
+26-Mar 19:30 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:30 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:30 - INFO - session.py - login_session - logging in
+26-Mar 19:30 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:30 - INFO - session.py - login_session - logging in
+26-Mar 19:30 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:30 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:30 - INFO - session.py - login_session - logging in
+26-Mar 19:30 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:30 - INFO - session.py - login_session - logging in
+26-Mar 19:30 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:30 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:30 - INFO - session.py - login_session - logging in
+26-Mar 19:30 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:30 - INFO - session.py - login_session - logging in
+26-Mar 19:30 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:31 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:31 - INFO - session.py - login_session - logging in
+26-Mar 19:31 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:31 - INFO - session.py - login_session - logging in
+26-Mar 19:31 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:31 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:31 - INFO - session.py - login_session - logging in
+26-Mar 19:31 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:31 - INFO - session.py - login_session - logging in
+26-Mar 19:31 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:34 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:34 - INFO - session.py - login_session - logging in
+26-Mar 19:34 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:34 - INFO - session.py - login_session - logging in
+26-Mar 19:34 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:34 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:34 - INFO - session.py - login_session - logging in
+26-Mar 19:34 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:34 - INFO - session.py - login_session - logging in
+26-Mar 19:34 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:35 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:35 - INFO - session.py - login_session - logging in
+26-Mar 19:35 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:35 - INFO - session.py - login_session - logging in
+26-Mar 19:35 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:35 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:35 - INFO - session.py - login_session - logging in
+26-Mar 19:35 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:35 - INFO - session.py - login_session - logging in
+26-Mar 19:35 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:37 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:37 - INFO - session.py - login_session - logging in
+26-Mar 19:37 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:37 - INFO - session.py - login_session - logging in
+26-Mar 19:37 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:37 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:37 - INFO - session.py - login_session - logging in
+26-Mar 19:37 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:37 - INFO - session.py - login_session - logging in
+26-Mar 19:37 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:46 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:46 - INFO - session.py - login_session - logging in
+26-Mar 19:46 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:46 - INFO - session.py - login_session - logging in
+26-Mar 19:46 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:46 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:46 - INFO - session.py - login_session - logging in
+26-Mar 19:46 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:46 - INFO - session.py - login_session - logging in
+26-Mar 19:46 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:47 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:47 - INFO - session.py - login_session - logging in
+26-Mar 19:47 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:47 - INFO - session.py - login_session - logging in
+26-Mar 19:47 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:47 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:47 - INFO - session.py - login_session - logging in
+26-Mar 19:47 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:47 - INFO - session.py - login_session - logging in
+26-Mar 19:47 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:50 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:50 - INFO - session.py - login_session - logging in
+26-Mar 19:50 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:50 - INFO - session.py - login_session - logging in
+26-Mar 19:50 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:50 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:50 - INFO - session.py - login_session - logging in
+26-Mar 19:50 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:50 - INFO - session.py - login_session - logging in
+26-Mar 19:50 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:51 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:51 - INFO - session.py - login_session - logging in
+26-Mar 19:51 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:51 - INFO - session.py - login_session - logging in
+26-Mar 19:51 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:51 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:51 - INFO - session.py - login_session - logging in
+26-Mar 19:51 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:51 - INFO - session.py - login_session - logging in
+26-Mar 19:51 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:52 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:52 - INFO - session.py - login_session - logging in
+26-Mar 19:52 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:52 - INFO - session.py - login_session - logging in
+26-Mar 19:52 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:52 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:52 - INFO - session.py - login_session - logging in
+26-Mar 19:52 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:52 - INFO - session.py - login_session - logging in
+26-Mar 19:52 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:54 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:54 - INFO - session.py - login_session - logging in
+26-Mar 19:54 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:54 - INFO - session.py - login_session - logging in
+26-Mar 19:54 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:54 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:54 - INFO - session.py - login_session - logging in
+26-Mar 19:54 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:54 - INFO - session.py - login_session - logging in
+26-Mar 19:54 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 19:56 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:56 - INFO - session.py - login_session - logging in
+26-Mar 19:56 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:56 - INFO - session.py - login_session - logging in
+26-Mar 19:56 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 19:56 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 19:56 - INFO - session.py - login_session - logging in
+26-Mar 19:56 - INFO - session.py - get_status - retrieving login status
+26-Mar 19:56 - INFO - session.py - login_session - logging in
+26-Mar 19:56 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 20:01 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:01 - INFO - session.py - login_session - logging in
+26-Mar 20:01 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:01 - INFO - session.py - login_session - logging in
+26-Mar 20:01 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:01 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:01 - INFO - session.py - login_session - logging in
+26-Mar 20:01 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:01 - INFO - session.py - login_session - logging in
+26-Mar 20:01 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 20:01 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:01 - INFO - session.py - login_session - logging in
+26-Mar 20:01 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:01 - INFO - session.py - login_session - logging in
+26-Mar 20:01 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:01 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:01 - INFO - session.py - login_session - logging in
+26-Mar 20:01 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:01 - INFO - session.py - login_session - logging in
+26-Mar 20:01 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 20:02 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:02 - INFO - session.py - login_session - logging in
+26-Mar 20:02 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:02 - INFO - session.py - login_session - logging in
+26-Mar 20:02 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:02 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:02 - INFO - session.py - login_session - logging in
+26-Mar 20:02 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:02 - INFO - session.py - login_session - logging in
+26-Mar 20:02 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 20:04 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:04 - INFO - session.py - login_session - logging in
+26-Mar 20:04 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:04 - INFO - session.py - login_session - logging in
+26-Mar 20:04 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:04 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:04 - INFO - session.py - login_session - logging in
+26-Mar 20:04 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:04 - INFO - session.py - login_session - logging in
+26-Mar 20:04 - INFO - stream.py - <module> - new session attempt: SUCCESS
+26-Mar 20:13 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:13 - INFO - session.py - login_session - logging in
+26-Mar 20:13 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:13 - INFO - session.py - login_session - logging in
+26-Mar 20:13 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:17 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:17 - INFO - session.py - login_session - logging in
+26-Mar 20:17 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:17 - INFO - session.py - login_session - logging in
+26-Mar 20:17 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:18 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:18 - INFO - session.py - login_session - logging in
+26-Mar 20:18 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:18 - INFO - session.py - login_session - logging in
+26-Mar 20:18 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:18 - INFO - listener.py - register_stream - [Register: 1]: marketSubscription
+26-Mar 20:18 - INFO - stream.py - _on_creation - [MarketStream: 1]: "MarketStream" created
+26-Mar 20:18 - INFO - listener.py - _on_connection - [MarketStream: 1]: connection_id: 109-260324121823-3031577
+26-Mar 20:18 - INFO - listener.py - _on_status - [MarketStream: 2]: SUCCESS (1 connections available)
+26-Mar 20:18 - ERROR - listener.py - _error_handler - [MarketStream: 1]: SUBSCRIPTION_LIMIT_EXCEEDED: trying to subscribe to 230 markets whereas max allowed number was: 200
+26-Mar 20:18 - INFO - listener.py - _on_status - [MarketStream: 1]: FAILURE (1 connections available)
+26-Mar 20:18 - ERROR - listener.py - _error_handler - [MarketStream: None]: TIMEOUT: Connection is not subscribed and is idle: 15000 ms
+26-Mar 20:22 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:22 - INFO - session.py - login_session - logging in
+26-Mar 20:22 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:22 - INFO - session.py - login_session - logging in
+26-Mar 20:22 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:22 - INFO - listener.py - register_stream - [Register: 1]: marketSubscription
+26-Mar 20:22 - INFO - stream.py - _on_creation - [MarketStream: 1]: "MarketStream" created
+26-Mar 20:22 - INFO - listener.py - _on_connection - [MarketStream: 1]: connection_id: 208-260324122221-3048435
+26-Mar 20:22 - INFO - listener.py - _on_status - [MarketStream: 2]: SUCCESS (1 connections available)
+26-Mar 20:22 - ERROR - listener.py - _error_handler - [MarketStream: 1]: SUBSCRIPTION_LIMIT_EXCEEDED: trying to subscribe to 230 markets whereas max allowed number was: 200
+26-Mar 20:22 - INFO - listener.py - _on_status - [MarketStream: 1]: FAILURE (1 connections available)
+26-Mar 20:22 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:22 - INFO - session.py - login_session - logging in
+26-Mar 20:22 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:22 - INFO - session.py - login_session - logging in
+26-Mar 20:22 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:23 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:23 - INFO - session.py - login_session - logging in
+26-Mar 20:23 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:23 - INFO - session.py - login_session - logging in
+26-Mar 20:23 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:23 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:23 - INFO - session.py - login_session - logging in
+26-Mar 20:23 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:23 - INFO - session.py - login_session - logging in
+26-Mar 20:23 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:24 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:24 - INFO - session.py - login_session - logging in
+26-Mar 20:24 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:24 - INFO - session.py - login_session - logging in
+26-Mar 20:24 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:25 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:25 - INFO - session.py - login_session - logging in
+26-Mar 20:25 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:25 - INFO - session.py - login_session - logging in
+26-Mar 20:25 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:25 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:25 - INFO - session.py - login_session - logging in
+26-Mar 20:25 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:25 - INFO - session.py - login_session - logging in
+26-Mar 20:25 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:26 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:26 - INFO - session.py - login_session - logging in
+26-Mar 20:26 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:26 - INFO - session.py - login_session - logging in
+26-Mar 20:26 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:26 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:26 - INFO - session.py - login_session - logging in
+26-Mar 20:26 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:26 - INFO - session.py - login_session - logging in
+26-Mar 20:26 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:27 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:27 - INFO - session.py - login_session - logging in
+26-Mar 20:27 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:27 - INFO - session.py - login_session - logging in
+26-Mar 20:27 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:27 - INFO - session.py - login_session - logging in
+26-Mar 20:27 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:27 - INFO - session.py - login_session - logging in
+26-Mar 20:27 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:28 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:28 - INFO - session.py - login_session - logging in
+26-Mar 20:28 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:28 - INFO - session.py - login_session - logging in
+26-Mar 20:28 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:28 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:28 - INFO - session.py - login_session - logging in
+26-Mar 20:28 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:28 - INFO - session.py - login_session - logging in
+26-Mar 20:28 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:29 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:29 - INFO - session.py - login_session - logging in
+26-Mar 20:29 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:29 - INFO - session.py - login_session - logging in
+26-Mar 20:29 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:40 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:40 - INFO - session.py - login_session - logging in
+26-Mar 20:40 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:40 - INFO - session.py - login_session - logging in
+26-Mar 20:40 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:41 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:41 - INFO - session.py - login_session - logging in
+26-Mar 20:41 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:41 - INFO - session.py - login_session - logging in
+26-Mar 20:41 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:45 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:45 - INFO - session.py - login_session - logging in
+26-Mar 20:45 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:45 - INFO - session.py - login_session - logging in
+26-Mar 20:45 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:46 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:46 - INFO - session.py - login_session - logging in
+26-Mar 20:46 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:46 - INFO - session.py - login_session - logging in
+26-Mar 20:46 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:47 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:47 - INFO - session.py - login_session - logging in
+26-Mar 20:47 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:47 - INFO - session.py - login_session - logging in
+26-Mar 20:47 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:47 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:47 - INFO - session.py - login_session - logging in
+26-Mar 20:47 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:47 - INFO - session.py - login_session - logging in
+26-Mar 20:47 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:53 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:53 - INFO - session.py - login_session - logging in
+26-Mar 20:53 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:53 - INFO - session.py - login_session - logging in
+26-Mar 20:53 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:55 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:55 - INFO - session.py - login_session - logging in
+26-Mar 20:55 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:55 - INFO - session.py - login_session - logging in
+26-Mar 20:56 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:57 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:57 - INFO - session.py - login_session - logging in
+26-Mar 20:57 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:57 - INFO - session.py - login_session - logging in
+26-Mar 20:57 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 20:59 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 20:59 - INFO - session.py - login_session - logging in
+26-Mar 20:59 - INFO - session.py - get_status - retrieving login status
+26-Mar 20:59 - INFO - session.py - login_session - logging in
+26-Mar 20:59 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:00 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:00 - INFO - session.py - login_session - logging in
+26-Mar 21:00 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:00 - INFO - session.py - login_session - logging in
+26-Mar 21:00 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:01 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:01 - INFO - session.py - login_session - logging in
+26-Mar 21:01 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:01 - INFO - session.py - login_session - logging in
+26-Mar 21:01 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:12 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:12 - INFO - session.py - login_session - logging in
+26-Mar 21:13 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:13 - INFO - session.py - login_session - logging in
+26-Mar 21:13 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:15 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:15 - INFO - session.py - login_session - logging in
+26-Mar 21:15 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:15 - INFO - session.py - login_session - logging in
+26-Mar 21:15 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:16 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:16 - INFO - session.py - login_session - logging in
+26-Mar 21:16 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:16 - INFO - session.py - login_session - logging in
+26-Mar 21:16 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:16 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:16 - INFO - session.py - login_session - logging in
+26-Mar 21:17 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:17 - INFO - session.py - login_session - logging in
+26-Mar 21:17 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:18 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:18 - INFO - session.py - login_session - logging in
+26-Mar 21:18 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:18 - INFO - session.py - login_session - logging in
+26-Mar 21:18 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:19 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:19 - INFO - session.py - login_session - logging in
+26-Mar 21:19 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:19 - INFO - session.py - login_session - logging in
+26-Mar 21:19 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:19 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:19 - INFO - session.py - login_session - logging in
+26-Mar 21:19 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:19 - INFO - session.py - login_session - logging in
+26-Mar 21:19 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:20 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:20 - INFO - session.py - login_session - logging in
+26-Mar 21:21 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:21 - INFO - session.py - login_session - logging in
+26-Mar 21:21 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:21 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:21 - INFO - session.py - login_session - logging in
+26-Mar 21:21 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:21 - INFO - session.py - login_session - logging in
+26-Mar 21:21 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:22 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:22 - INFO - session.py - login_session - logging in
+26-Mar 21:22 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:22 - INFO - session.py - login_session - logging in
+26-Mar 21:22 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:23 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:23 - INFO - session.py - login_session - logging in
+26-Mar 21:23 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:23 - INFO - session.py - login_session - logging in
+26-Mar 21:23 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:25 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:25 - INFO - session.py - login_session - logging in
+26-Mar 21:25 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:25 - INFO - session.py - login_session - logging in
+26-Mar 21:25 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:28 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:28 - INFO - session.py - login_session - logging in
+26-Mar 21:28 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:28 - INFO - session.py - login_session - logging in
+26-Mar 21:28 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:29 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:29 - INFO - session.py - login_session - logging in
+26-Mar 21:29 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:29 - INFO - session.py - login_session - logging in
+26-Mar 21:29 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:33 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:33 - INFO - session.py - login_session - logging in
+26-Mar 21:33 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:33 - INFO - session.py - login_session - logging in
+26-Mar 21:33 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:34 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:34 - INFO - session.py - login_session - logging in
+26-Mar 21:34 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:34 - INFO - session.py - login_session - logging in
+26-Mar 21:34 - INFO - session.py - <module> - new session attempt: SUCCESS
+26-Mar 21:35 - INFO - session.py - get_session - retrieving sessionToken
+26-Mar 21:35 - INFO - session.py - login_session - logging in
+26-Mar 21:35 - INFO - session.py - get_status - retrieving login status
+26-Mar 21:35 - INFO - session.py - login_session - logging in
+26-Mar 21:35 - INFO - session.py - <module> - new session attempt: SUCCESS
