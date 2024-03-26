@@ -4,7 +4,6 @@ import os
 from tabulate import dataframe, get_headers
 import logging
 from datetime import datetime, timezone, timedelta
-from postgres import add_to_database
 import pandas as pd
 
 # Set up logging
@@ -185,9 +184,6 @@ if __name__ == "__main__":
     # Inner join on the "marketId" column
     merged_df = pd.merge(available_home_selection, next_markets, on='marketId', how='inner')
     print(merged_df.columns)
-    add_to_database(merged_df)
 
-
-        
 
     #print(next_markets)

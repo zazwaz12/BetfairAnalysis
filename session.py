@@ -39,22 +39,31 @@ class BetfairLogin:
         logger.info("retrieving login status")
         login_dict = self.login_session()
         return login_dict.get("loginStatus")
+    
+    def update_environment_variables(self, filename):
+        with open(filename, 'r') as file:
+            lines = file.readlines()
+            
+        # Remove the last line
+        lines = lines[:-1]
+        lines.append(f'SESSION="{session}"\n')
+
+        with open(filename, 'w') as file:
+                file.writelines(lines)
+        load_dotenv()
+    
+    def instantiate_session(self):
+        with open(".env", "r") as file:
+            for line in file:
+                if line.startswith("SESSION="):
+                    session = line.split("=", 1)[1].replace('"', "").strip()
+                    break
+        os.environ["SESSION"] = session
+         
 
 loggedIn = BetfairLogin()
 session = loggedIn.get_session()
-
-filename = ".env"
-
-with open(filename, 'r') as file:
-        lines = file.readlines()
-    
-    # Remove the last line
-lines = lines[:-1]
-lines.append(f'SESSION="{session}"\n')
-
-with open(filename, 'w') as file:
-        file.writelines(lines)
-load_dotenv()
-print(loggedIn.get_status())
+logger.info(f"new session attempt: {loggedIn.get_status()}")
+loggedIn.update_environment_variables(".env")
 
 

@@ -1,14 +1,25 @@
 import ssl
 import socket
 import os
+import logging
 from dotenv import load_dotenv 
+from session import BetfairLogin
 
-# Load environment variables from .env file
-load_dotenv()
+# Set up logging
+log_format = '%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s'
+logging.basicConfig(filename='betfair.log', level=logging.INFO, format=log_format, datefmt='%d-%b %H:%M')
+logger = logging.getLogger()
+
+loggedIn = BetfairLogin()
+session = loggedIn.get_session()
+logger.info(f"new session attempt: {loggedIn.get_status()}")
+loggedIn.update_environment_variables(".env")
+loggedIn.instantiate_session()
 
 # Now you can access the variables defined in your .env file like this
 app_key = os.getenv("APPLICATION_KEY")
 session = os.getenv("SESSION")
+print(session)
 
 # Socket connection options - this is Betfair specific
 options = {
@@ -28,9 +39,7 @@ with socket.create_connection((options['host'], options['port'])) as sock:
         
         # Subscribe to order/market stream
         # event id for cricket, tennis and AFL are: 2, 4 and 61420
-        order_subscription_message = '{"op":"orderSubscription","orderFilter":{"includeOverallPosition":false,"customerStrategyRefs":["betstrategy1"],"partitionMatchedByStrategyRef":true},"segmentationEnabled":true}\r\n'
-        market_subscription_message = '{"op":"marketSubscription","id":2,"marketFilter":{"bspMarket":true,"bettingTypes":["ODDS"],"eventTypeIds":["2", "4", "61420"],"turnInPlayEnabled":true,"marketTypes":["MATCH_ODDS"]},"marketDataFilter":{}}\r\n'
-        ssock.sendall(order_subscription_message.encode())
+        market_subscription_message = '{"op":"marketSubscription","marketFilter":{"bettingTypes":["ODDS"],"eventTypeIds":["4", "61420"],"turnInPlayEnabled":true,"marketTypes":["MATCH_ODDS"]},"marketDataFilter":{}}\r\n'
         ssock.sendall(market_subscription_message.encode())
         
         # Receive data from the socket
