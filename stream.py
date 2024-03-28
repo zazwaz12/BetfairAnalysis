@@ -52,18 +52,22 @@ with socket.create_connection((options['host'], options['port'])) as sock:
         
         # Subscribe to order/market stream
         # event id for cricket, tennis and AFL are: 2, 4 and 61420
-        market_subscription_message = '{"op":"marketSubscription","marketFilter":{"eventTypeIds":["2"],"marketTypes":["MATCH_ODDS"]},"marketDataFilter":{"ladderLevels": 1, "fields":["EX_BEST_OFFERS", "SP_TRADED"]}}\r\n'
+        market_subscription_message = '{"op":"marketSubscription","marketFilter":{"eventTypeIds":["2", "4", "61420","marketTypes":["MATCH_ODDS"], "inPlay":true},"marketDataFilter":{"ladderLevels": 1, "fields":["EX_BEST_OFFERS", "SP_TRADED"]}}\r\n'
         #market_subscription_message = market_subscription_message.replace("current_time_str", current_time_str)
         #market_subscription_message = market_subscription_message.replace("end_time_str", end_time_str)
         print(market_subscription_message)
         ssock.sendall(market_subscription_message.encode())
         
-        # Receive data from the socket
         while True:
             data = ssock.recv(1024)
             if not data:
                 break
             count += 1
-            print(f"Received {count}:", data.decode())
+            json_str = data.decode()
+            if json_str != "":
+                # Write the received JSON string to the file
+                with open("unprocessedmarkets.json", "a") as outfile:  # Use 'a' for append mode
+                    outfile.write(json_str + '\n')
+
 
 print('Connection closed')

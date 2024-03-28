@@ -28,10 +28,11 @@ producer = Producer(read_ccloud_config("client.properties"))
 
 if __name__ == "__main__":
     # Iterating through the json lines file
-    with open('books.json', 'rb') as f:
+    with open('unprocessedmarkets.json', 'rb') as f:
         for item in json_lines.reader(f):
+            print(item)
             producer.produce(
-                topic="my-books-2", 
+                topic="BettingMarketOdds", 
                 key=json.dumps(item['bookID']).encode('utf-8'), 
                 value=json.dumps(item).encode('utf-8'),
                 callback=delivery_callback
