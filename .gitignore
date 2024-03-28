@@ -1,4 +1,4 @@
 .env
-.log
+Betfair.log
 client-2048.pem
 client.properties

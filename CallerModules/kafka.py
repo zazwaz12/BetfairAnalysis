@@ -26,19 +26,25 @@ def delivery_callback(err, msg):
 producer = Producer(read_ccloud_config("client.properties"))
 
 
-if __name__ == "__main__":
+def read_the_json ():
     # Iterating through the json lines file
     with open('unprocessedmarkets.json', 'rb') as f:
-        for item in json_lines.reader(f):
-            print(item)
-            producer.produce(
-                topic="BettingMarketOdds", 
-                key=json.dumps(item['bookID']).encode('utf-8'), 
-                value=json.dumps(item).encode('utf-8'),
-                callback=delivery_callback
-            )
-            producer.poll(0)
+        for line in f:
+            try:
+                item = next(json_lines.reader([line.decode()]))
+                print(item, item["op"])
+                producer.produce(
+                    topic="BettingMarketOdds", 
+                    key=json.dumps(item['op']).encode('utf-8'), 
+                    value=json.dumps(item).encode('utf-8'),
+                    callback=delivery_callback
+                )
+                producer.poll(0)
+            except (json.decoder.JSONDecodeError, IndexError):
+                print("Error decoding or indexing JSON line:", line.decode())
+                continue
 
     # Closing the file handle
+    open('unprocessedmarkets.json', 'w').close()
     producer.flush()
     f.close()

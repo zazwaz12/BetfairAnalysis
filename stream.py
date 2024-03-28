@@ -3,8 +3,9 @@ import socket
 import os
 import logging
 from dotenv import load_dotenv 
-from session import BetfairLogin
-
+from CallerModules.session import BetfairLogin
+from CallerModules.kafka import read_the_json
+import time
 from datetime import datetime, timedelta
 
 # Get the current time
@@ -52,11 +53,16 @@ with socket.create_connection((options['host'], options['port'])) as sock:
         
         # Subscribe to order/market stream
         # event id for cricket, tennis and AFL are: 2, 4 and 61420
-        market_subscription_message = '{"op":"marketSubscription","marketFilter":{"eventTypeIds":["2", "4", "61420","marketTypes":["MATCH_ODDS"], "inPlay":true},"marketDataFilter":{"ladderLevels": 1, "fields":["EX_BEST_OFFERS", "SP_TRADED"]}}\r\n'
+        market_subscription_message = '{"op":"marketSubscription","marketFilter":{"eventTypeIds":["2", "4", "61420"],"marketTypes":["MATCH_ODDS"], "inPlay":true},"marketDataFilter":{"ladderLevels": 1, "fields":["EX_BEST_OFFERS", "SP_TRADED"]}}\r\n'
         #market_subscription_message = market_subscription_message.replace("current_time_str", current_time_str)
         #market_subscription_message = market_subscription_message.replace("end_time_str", end_time_str)
         print(market_subscription_message)
         ssock.sendall(market_subscription_message.encode())
+
+        # Set initial time and flag
+        start_time = time.time()
+        elapsed_time = 0
+        ten_seconds_passed = False
         
         while True:
             data = ssock.recv(1024)
@@ -68,6 +74,20 @@ with socket.create_connection((options['host'], options['port'])) as sock:
                 # Write the received JSON string to the file
                 with open("unprocessedmarkets.json", "a") as outfile:  # Use 'a' for append mode
                     outfile.write(json_str + '\n')
+                # Check if 10 seconds have passed
+                elapsed_time = time.time() - start_time
+                if elapsed_time >= 10:
+                    ten_seconds_passed = True
+                
+                # true every 10 seconds
+                if ten_seconds_passed:
+                    # Call the json reading to Kafka
+                    read_the_json()
+
+                    # Reset the timer and flag
+                    start_time = time.time()
+                    elapsed_time = 0
+                    ten_seconds_passed = False
 
 
 print('Connection closed')
