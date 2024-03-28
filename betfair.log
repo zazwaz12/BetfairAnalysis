@@ -825,3 +825,13 @@
 26-Mar 21:35 - INFO - session.py - get_status - retrieving login status
 26-Mar 21:35 - INFO - session.py - login_session - logging in
 26-Mar 21:35 - INFO - session.py - <module> - new session attempt: SUCCESS
+28-Mar 18:29 - INFO - session.py - get_session - retrieving sessionToken
+28-Mar 18:29 - INFO - session.py - login_session - logging in
+28-Mar 18:29 - INFO - session.py - get_status - retrieving login status
+28-Mar 18:29 - INFO - session.py - login_session - logging in
+28-Mar 18:29 - INFO - session.py - <module> - new session attempt: SUCCESS
+28-Mar 18:29 - INFO - session.py - get_session - retrieving sessionToken
+28-Mar 18:29 - INFO - session.py - login_session - logging in
+28-Mar 18:29 - INFO - session.py - get_status - retrieving login status
+28-Mar 18:29 - INFO - session.py - login_session - logging in
+28-Mar 18:29 - INFO - stream.py - <module> - new session attempt: SUCCESS
