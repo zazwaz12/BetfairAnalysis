@@ -2,14 +2,9 @@ import urllib.request
 import json
 import os
 from tabulate import dataframe, get_headers
-import logging
+from logSetup import logger
 from datetime import datetime, timezone, timedelta
 import pandas as pd
-
-# Set up logging
-log_format = '%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s'
-logging.basicConfig(filename='betfair.log', level=logging.INFO, format=log_format, datefmt='%d-%b %H:%M')
-logger = logging.getLogger()
 
 now_time = datetime.now(timezone.utc) + timedelta(hours=-3) 
 end_time = now_time + timedelta(hours=12) 

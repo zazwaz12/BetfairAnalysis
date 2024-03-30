@@ -1,13 +1,15 @@
 import ssl
 import socket
 import os
-import logging
+from CallerModules.logSetup import logger
 from dotenv import load_dotenv 
 from CallerModules.session import BetfairLogin
 from CallerModules.kafka import read_the_json
 import time
 from datetime import datetime, timedelta
 import json
+initial_clk ="G86MwaQFHaj/qZUFFo7i858F"
+clk = "AJzeAwDD+wEAqoAC"
 
 # Get the current time
 current_time = datetime.now()
@@ -18,11 +20,6 @@ end_time = current_time + timedelta(hours=1)
 # Format the timestamps in the required format (ISO 8601)
 current_time_str = current_time.strftime("%Y-%m-%dT%H:%M:%SZ")
 end_time_str = end_time.strftime("%Y-%m-%dT%H:%M:%SZ")
-
-# Set up logging
-log_format = '%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s'
-logging.basicConfig(filename='betfair.log', level=logging.INFO, format=log_format, datefmt='%d-%b %H:%M')
-logger = logging.getLogger()
 
 loggedIn = BetfairLogin()
 session = loggedIn.get_session()
@@ -50,7 +47,7 @@ with socket.create_connection((options['host'], options['port'])) as sock:
         auth_message = f'{{"op": "authentication", "appKey": "{app_key}", "session":"{session}"}}\r\n'
         ssock.sendall(auth_message.encode())
         # event id for cricket, tennis and AFL are: 2, 4 and 61420
-        market_subscription_message = '{"op":"marketSubscription", "marketFilter":{"eventTypeIds":["2", "4", "61420"],"marketTypes":["MATCH_ODDS"], "inPlay":true},"marketDataFilter":{"ladderLevels": 1, "fields":["EX_BEST_OFFERS", "SP_TRADED"]}}\r\n'
+        market_subscription_message = '{"op":"marketSubscription", "initialClk":"G4CAxqQFHc3MrJUFFoag9p8F","clk":"ALd7ALpBAIs4", "marketFilter":{"eventTypeIds":["2", "4", "61420"],"marketTypes":["MATCH_ODDS"], "inPlay":true},"marketDataFilter":{"ladderLevels": 1, "fields":["EX_BEST_OFFERS", "SP_TRADED"]}}\r\n'
         ssock.sendall(market_subscription_message.encode())
         # Set initial time and flag
         start_time = time.time()
@@ -63,7 +60,7 @@ with socket.create_connection((options['host'], options['port'])) as sock:
                 break
             count += 1
             json_str = data.decode()
-            if "HEARTBEAT" not in json_str:
+            if "HEARTBEAT" not in json_str and "connection" not in json_str and "status" not in json_str:
                 complete_json += json_str
                 logger.info(json_str + "\n\n")
             else:
@@ -71,7 +68,7 @@ with socket.create_connection((options['host'], options['port'])) as sock:
                 # Write the received JSON string to the file
                 with open("unprocessedmarkets.json", "a") as outfile:
                     if len(complete_json) > 0:
-                        outfile.write(complete_json + "\n\n\n")
+                        outfile.write(complete_json)
                         complete_json = ""
 
                 # Check if 10 seconds have passed

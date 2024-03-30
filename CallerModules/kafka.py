@@ -1,6 +1,7 @@
 import json
 import json_lines
 import sys
+from logSetup import logger
 
 from confluent_kafka import Producer
 
@@ -42,6 +43,7 @@ def read_the_json ():
                 producer.poll(0)
             except (json.decoder.JSONDecodeError, IndexError):
                 print("Error decoding or indexing JSON line:", line.decode())
+                print(line.decode())
                 continue
 
     # Closing the file handle

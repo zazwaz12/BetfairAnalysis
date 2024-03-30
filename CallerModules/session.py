@@ -2,13 +2,8 @@ import os
 import requests
 import json
 from urllib.parse import urlencode
-import logging
+from logSetup import logger
 from dotenv import load_dotenv
-
-# Set up logging
-log_format = '%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s'
-logging.basicConfig(filename='betfair.log', level=logging.INFO, format=log_format, datefmt='%d-%b %H:%M')
-logger = logging.getLogger()
 
 
 class BetfairLogin:

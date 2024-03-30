@@ -1,5 +1,6 @@
 from confluent_kafka import Consumer, KafkaException, KafkaError
 from CallerModules.kafkaProducing import read_ccloud_config
+from logSetup import logger
 import sys
 import json
 
