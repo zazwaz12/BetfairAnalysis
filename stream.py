@@ -65,30 +65,35 @@ with socket.create_connection((options['host'], options['port'])) as sock:
             json_str = data.decode()
             complete_json += json_str
             if json_str != "":
-                # Write the received JSON string to the file
-                with open("unprocessedmarkets.json", "a") as outfile:
-                    if json_str.strip()[-1] == "}":
-                        outfile.write(json_str.strip() + ",")
-                    else:
-                        outfile.write(json_str.strip())
-                # Check if 10 seconds have passed
-                elapsed_time = time.time() - start_time
-                if elapsed_time >= 10:
-                    ten_seconds_passed = True
-                try:
-                    json.load(complete_json).replace("   ", ",")
-                    # true every 10 seconds
-                    if ten_seconds_passed:
-                        # Call the json reading to Kafka
-                        read_the_json()
+                if "SEG_START" in json_str:
+                    complete_json = json_str
+                    print(json_str)
+                if "SEG_END" in json_str:
+                    print(json_str)
+                    # Write the received JSON string to the file
+                    with open("unprocessedmarkets.json", "a") as outfile:
+                        if json_str.strip()[-1] == "}":
+                            outfile.write(json_str.strip() + ",")
+                        else:
+                            outfile.write(json_str.strip())
+                    # Check if 10 seconds have passed
+                    elapsed_time = time.time() - start_time
+                    if elapsed_time >= 10:
+                        ten_seconds_passed = True
+                    try:
+                        json.load(complete_json).replace("   ", ",")
+                        # true every 10 seconds
+                        if ten_seconds_passed:
+                            # Call the json reading to Kafka
+                            read_the_json()
 
-                        # Reset the timer and flag
-                        complete_json = ""
-                        start_time = time.time()
-                        elapsed_time = 0
-                        ten_seconds_passed = False
-                except:
-                    logger.info(f"Not adding: {complete_json}")
+                            # Reset the timer and flag
+                            complete_json = ""
+                            start_time = time.time()
+                            elapsed_time = 0
+                            ten_seconds_passed = False
+                    except:
+                        logger.info(f"Not adding: {complete_json}")
                 
 
 
