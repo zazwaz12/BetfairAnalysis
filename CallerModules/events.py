@@ -2,7 +2,7 @@ import urllib.request
 import json
 import os
 from tabulate import dataframe, get_headers
-from logSetup import logger
+from CallerModules.logSetup import logger
 from datetime import datetime, timezone, timedelta
 import pandas as pd
 
