@@ -32,7 +32,7 @@ def read_the_json ():
         for line in f:
             try:
                 item = next(json_lines.reader([line.decode()]))
-                print(item, item["op"])
+                #print(item, item["op"])
                 producer.produce(
                     topic="BettingMarketOdds", 
                     key=json.dumps(item['op']).encode('utf-8'), 

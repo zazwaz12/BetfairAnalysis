@@ -24,7 +24,7 @@ def consume_from_topic(topic):
                 # Assuming the message value is JSON
                 message_json = json.loads(msg_value)
                 # Process the JSON message here
-                print("Received message:", message_json)
+                #print("Received message:", message_json)
     except KeyboardInterrupt:
         sys.stderr.write('%% Aborted by user\n')
     finally:
