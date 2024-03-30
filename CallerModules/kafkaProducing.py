@@ -2,6 +2,7 @@ import json
 import json_lines
 import sys
 import os
+from CallerModules.logSetup import logger
 
 from confluent_kafka import Producer
 
