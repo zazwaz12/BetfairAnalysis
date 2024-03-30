@@ -7,6 +7,7 @@ from CallerModules.session import BetfairLogin
 from CallerModules.kafka import read_the_json
 import time
 from datetime import datetime, timedelta
+import json
 
 # Get the current time
 current_time = datetime.now()
@@ -45,49 +46,50 @@ count = 0
 context = ssl.create_default_context()
 with socket.create_connection((options['host'], options['port'])) as sock:
     with context.wrap_socket(sock, server_hostname=options['host']) as ssock:
-        print("Connected")
-        
         # Send authentication message
         auth_message = f'{{"op": "authentication", "appKey": "{app_key}", "session":"{session}"}}\r\n'
         ssock.sendall(auth_message.encode())
-        
-        # Subscribe to order/market stream
         # event id for cricket, tennis and AFL are: 2, 4 and 61420
-        market_subscription_message = '{"op":"marketSubscription","marketFilter":{"eventTypeIds":["2", "4", "61420"],"marketTypes":["MATCH_ODDS"], "inPlay":true},"marketDataFilter":{"ladderLevels": 1, "fields":["EX_BEST_OFFERS", "SP_TRADED"]}}\r\n'
-        #market_subscription_message = market_subscription_message.replace("current_time_str", current_time_str)
-        #market_subscription_message = market_subscription_message.replace("end_time_str", end_time_str)
-        print(market_subscription_message)
+        market_subscription_message = '{"op":"marketSubscription", "segmentationEnabled":false, "marketFilter":{"eventTypeIds":["2", "4", "61420"],"marketTypes":["MATCH_ODDS"], "inPlay":true},"marketDataFilter":{"ladderLevels": 1, "fields":["EX_BEST_OFFERS", "SP_TRADED"]}}\r\n'
         ssock.sendall(market_subscription_message.encode())
-
         # Set initial time and flag
         start_time = time.time()
         elapsed_time = 0
         ten_seconds_passed = False
-        
+        complete_json = ""
         while True:
             data = ssock.recv(1024)
             if not data:
                 break
             count += 1
             json_str = data.decode()
+            complete_json += json_str
             if json_str != "":
                 # Write the received JSON string to the file
-                with open("unprocessedmarkets.json", "a") as outfile:  # Use 'a' for append mode
-                    outfile.write(json_str + '\n')
+                with open("unprocessedmarkets.json", "a") as outfile:
+                    if json_str.strip()[-1] == "}":
+                        outfile.write(json_str.strip() + ",")
+                    else:
+                        outfile.write(json_str.strip())
                 # Check if 10 seconds have passed
                 elapsed_time = time.time() - start_time
                 if elapsed_time >= 10:
                     ten_seconds_passed = True
-                
-                # true every 10 seconds
-                if ten_seconds_passed:
-                    # Call the json reading to Kafka
-                    read_the_json()
+                try:
+                    json.load(complete_json).replace("   ", ",")
+                    # true every 10 seconds
+                    if ten_seconds_passed:
+                        # Call the json reading to Kafka
+                        read_the_json()
 
-                    # Reset the timer and flag
-                    start_time = time.time()
-                    elapsed_time = 0
-                    ten_seconds_passed = False
+                        # Reset the timer and flag
+                        complete_json = ""
+                        start_time = time.time()
+                        elapsed_time = 0
+                        ten_seconds_passed = False
+                except:
+                    logger.info(f"Not adding: {complete_json}")
+                
 
 
 print('Connection closed')
