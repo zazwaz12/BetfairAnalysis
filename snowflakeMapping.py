@@ -1,4 +1,5 @@
 import os
+import json
 import snowflake.connector
 from dotenv import load_dotenv
 from events import instantiate_session
@@ -37,9 +38,9 @@ conn.close()
 market_data = [f"{element}" for element in market_data]
 
 # Join the elements with commas to form a single string
-print(market_data)
 betfair = instantiate_session()
-print(betfair.getMarketCatalogue(market_data))
+updates_json = betfair.getMarketCatalogue(market_data)
 # Now you have your data in the Python list `data_list`
 #print(market_data)
-
+with open("unprocessedmarkets.json", "w") as outfile:
+        outfile.write(json.dumps(updates_json))
