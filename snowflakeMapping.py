@@ -34,10 +34,9 @@ cur.close()
 conn.close()
 
 # Convert the list elements to strings wrapped in double quotes
-market_data = [f'"{element}"' for element in market_data]
+market_data = [f"{element}" for element in market_data]
 
 # Join the elements with commas to form a single string
-market_data = ", ".join(market_data)
 print(market_data)
 betfair = instantiate_session()
 print(betfair.getMarketCatalogue(market_data))
