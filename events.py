@@ -1,7 +1,6 @@
 import urllib.request
 import json
 import os
-from tabulate import dataframe, get_headers
 from CallerModules.logSetup import logger
 from datetime import datetime, timezone, timedelta
 import pandas as pd
@@ -45,32 +44,30 @@ class BetfairAPI:
             for market in marketCatalogueResult:
                 return market['runners'][0]['selectionId']
             
-    def getMarketCatalogue(self, eventTypeID):
-        if eventTypeID is not None:
-            logger.info('Calling listMarketCatalouge Operation to get MarketID and selectionId')
-            market_catalogue_req = {
-                "jsonrpc": "2.0",
-                "method": "SportsAPING/v1.0/listMarketCatalogue",
-                "params": {
-                    "filter": {
-                        #Select the whole sport, tennis, cricket, footy...
-                        "eventTypeIds": [eventTypeID],
-                        #Only care about head to heads
-                        "marketTypeCodes": ["MATCH_ODDS"],
-                        "marketStartTime": {"from": now, "to": end}
-                    },
-                    "sort": "FIRST_TO_START",
-                    "maxResults": "1000",
-                    "marketProjection": ["EVENT", "COMPETITION", "MARKET_START_TIME", "EVENT_TYPE"]
+    def getMarketCatalogue(self, listOfMarkets):
+        logger.info('Calling listMarketCatalouge to get runner info')
+        print(listOfMarkets)
+        market_catalogue_req = {
+            "jsonrpc": "2.0",
+            "method": "SportsAPING/v1.0/listMarketCatalogue",
+            "params": {
+                "filter": {
+                    #Select the whole sport, tennis, cricket, footy..
+                    #repr removes the string
+                    "marketIds": listOfMarkets,
+                    #Only care about head to heads
+                    "marketTypeCodes": ["MATCH_ODDS"]
                 },
-                "id": 1
+                "maxResults": "1000",
+                "marketProjection": ["EVENT", "COMPETITION", "MARKET_START_TIME", "EVENT_TYPE", "RUNNER_DESCRIPTION"]
             }
-            market_catalogue_response = self.call_api(json.dumps(market_catalogue_req))
-            market_catalogue_loads = json.loads(market_catalogue_response)
-            market_catalogue_results = market_catalogue_loads['result']
-            events_df = dataframe(market_catalogue_results)
-            self.market_df = pd.concat([events_df,self.market_df], ignore_index=True)
-            return market_catalogue_results
+        }
+        print(market_catalogue_req)
+        market_catalogue_response = self.call_api(json.dumps(market_catalogue_req))
+        market_catalogue_loads = json.loads(market_catalogue_response)
+        #market_catalogue_results = market_catalogue_loads['result']
+
+        return market_catalogue_loads
 
 
     def get_market_book_best_offers(self, marketId):
