@@ -1,0 +1,4 @@
+dbt-core==1.7.0
+dbt-snowflake==1.7.0
+protobuf==4.25.3
+dagster==1.6.8

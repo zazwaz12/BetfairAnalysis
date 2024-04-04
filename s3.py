@@ -6,10 +6,13 @@ def upload_file_to_s3(file_path, bucket_name, object_name):
 
     # Upload the file to S3
     s3.upload_file(file_path, bucket_name, object_name)
+    with open(file_path, "w") as outfile:
+        pass #clears file
+      
 
 # Replace these with your actual values
-file_path = 'unprocessedmarkets.json'
+file_path = 'newStream.json'
 bucket_name = 'betfair-json-bucket'
-object_name = 'unprocessedmarkets.json'
+object_name = 'Streams/newStream.json'
 
 upload_file_to_s3(file_path, bucket_name, object_name)
