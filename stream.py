@@ -47,15 +47,14 @@ with socket.create_connection((options['host'], options['port'])) as sock:
 
         #subscription message
         market_subscription_message = (
-            '{"op":"marketSubscription", "initialClk":"' + initial_clk + '","clk":"' + clk + '",'
+            '{"op":"marketSubscription",'
             '"marketFilter":{"eventTypeIds":["2", "4", "61420"],"marketTypes":["MATCH_ODDS"], "inPlay":true},'
-            '"marketDataFilter":{"ladderLevels": 1, "fields":["EX_BEST_OFFERS", "SP_TRADED"]}}\r\n'
+            '"marketDataFilter":{"ladderLevels": 1, "fields":["EX_BEST_OFFERS"]}}\r\n'
         )
+        print(market_subscription_message)
         ssock.sendall(market_subscription_message.encode())
         logger.info("sending market subscription message")
 
-        with open("unprocessedmarkets.json", "w") as outfile:
-            logger.info("clearing json file")
 
         #set initial time and flag
         start_time = time.time()
@@ -72,13 +71,13 @@ with socket.create_connection((options['host'], options['port'])) as sock:
                 complete_json += json_str
             else:
                 # Write the received JSON string to the file
-                with open("unprocessedmarkets.json", "a") as outfile:
+                with open("newStream.json", "a") as outfile:
                     if len(complete_json) > 0:
                         logger.info("sending market snapshot to json")
                         outfile.write(complete_json)
                         complete_json = ""
 
-                        # Check if 10 seconds have passed
+                '''      # Check if 10 seconds have passed
                 elapsed_time = time.time() - start_time
                 if elapsed_time >= 10:
                     ten_seconds_passed = True
@@ -95,7 +94,7 @@ with socket.create_connection((options['host'], options['port'])) as sock:
                         ten_seconds_passed = False
                 except:
                     logger.info(f"not adding:\n\t{complete_json}")
-            
+                '''
 
 
 logger.info("connection closed")

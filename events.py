@@ -46,7 +46,6 @@ class BetfairAPI:
             
     def getMarketCatalogue(self, listOfMarkets):
         logger.info('Calling listMarketCatalouge to get runner info')
-        print(listOfMarkets)
         market_catalogue_req = {
             "jsonrpc": "2.0",
             "method": "SportsAPING/v1.0/listMarketCatalogue",
@@ -62,7 +61,6 @@ class BetfairAPI:
                 "marketProjection": ["EVENT", "COMPETITION", "MARKET_START_TIME", "EVENT_TYPE", "RUNNER_DESCRIPTION"]
             }
         }
-        print(market_catalogue_req)
         market_catalogue_response = self.call_api(json.dumps(market_catalogue_req))
         market_catalogue_loads = json.loads(market_catalogue_response)
         #market_catalogue_results = market_catalogue_loads['result']
