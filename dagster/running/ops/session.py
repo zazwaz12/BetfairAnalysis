@@ -2,7 +2,7 @@ import os
 import requests
 import json
 from urllib.parse import urlencode
-from dagster.running.ops.logSetup import logger
+from running.ops.logSetup import logger
 from dotenv import load_dotenv
 
 
