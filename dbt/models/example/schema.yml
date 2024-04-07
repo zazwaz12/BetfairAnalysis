@@ -1,9 +1,8 @@
-
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: MarketChanges(1)
+    description: "For the market messages"
     columns:
       - name: id
         description: "The primary key for this table"
@@ -11,8 +10,8 @@ models:
           - unique
           - not_null
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
+  - name: MarketInformation(2)
+    description: "For information on the markets"
     columns:
       - name: id
         description: "The primary key for this table"

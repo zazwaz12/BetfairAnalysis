@@ -1,0 +1,18 @@
+# profiles.yml
+
+# Profile for development environment
+betfairModels:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: bm98067.ap-southeast-2
+      user: zazwaz
+      password: "{{ env_var('sf.password') }}"
+      role: ACCOUNT_ADMIN
+      database: "BETFAIRANALYSIS"
+      warehouse: "COMPUTE_WH"
+      schema: "PUBLIC"
+
+      threads: 4 # Adjust as needed based on your Snowflake plan
+      client_session_keep_alive: False # Adjust based on Snowflake best practices
