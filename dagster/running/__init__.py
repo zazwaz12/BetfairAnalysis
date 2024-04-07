@@ -1,9 +1,7 @@
-from dagster import Definitions, load_assets_from_modules
+from dagster import Definitions, EnvVar
 
-from . import assets
-
-all_assets = load_assets_from_modules([assets])
+from running.jobs import run_market_info, run_market_prices
 
 defs = Definitions(
-    assets=all_assets,
+    jobs=[run_market_prices, run_market_info]
 )
