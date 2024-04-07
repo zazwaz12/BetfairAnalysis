@@ -2,3 +2,4 @@
 betfair.log
 client-2048.pem
 client.properties
+*.venv

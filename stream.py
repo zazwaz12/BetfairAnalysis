@@ -1,10 +1,58 @@
 import ssl
 import socket
 import os
-from CallerModules.logSetup import logger
-from CallerModules.session import BetfairLogin
-from CallerModules.kafka import read_the_json
 import time
+import requests
+import json
+from urllib.parse import urlencode
+from dotenv import load_dotenv
+
+
+class BetfairLogin:
+    def __init__(self):
+        self.url = "https://identitysso-cert.betfair.com/api/certlogin"
+        self.headers = {
+            "X-Application": os.getenv("APPLICATION_KEY"),
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
+        self.username = os.getenv("USERNAME")
+        self.password = os.getenv("PASSWORD")
+        self.encoded_username = urlencode({"username": self.username})
+        self.encoded_password = urlencode({"password": self.password})
+        self.data = f"{self.encoded_username}&{self.encoded_password}"
+        self.cert = (os.getenv("PEM_PATH"), os.getenv("PEM_PATH"))
+
+    def login_session(self):
+        response = requests.post(self.url, headers=self.headers, data=self.data, cert=self.cert)
+        return json.loads(response.text)
+
+    def get_session(self):
+        login_dict = self.login_session()
+        return login_dict.get("sessionToken")
+
+    def get_status(self):
+        login_dict = self.login_session()
+        return login_dict.get("loginStatus")
+    
+    def update_environment_variables(self, filename, session):
+        with open(filename, 'r') as file:
+            lines = file.readlines()
+            
+        # Remove the last line
+        lines = lines[:-1]
+        lines.append(f'SESSION="{session}"\n')
+
+        with open(filename, 'w') as file:
+                file.writelines(lines)
+        load_dotenv()
+    
+    def instantiate_session(self):
+        with open(".env", "r") as file:
+            for line in file:
+                if line.startswith("SESSION="):
+                    session = line.split("=", 1)[1].replace('"', "").strip()
+                    break
+        os.environ["SESSION"] = session
 
 """
 initial_clk is the given on a new connection
@@ -17,9 +65,7 @@ clk = "AAAAAAAA"
 
 #creating new session
 sess = BetfairLogin()
-logger.info("requesting a session")
 session = sess.get_session()
-logger.info("session created")
 
 #updating and persisting environment variables
 sess.update_environment_variables(".env", session)
@@ -27,7 +73,11 @@ sess.instantiate_session()
 
 #now variables defined in .env file can be accessed
 app_key = os.getenv("APPLICATION_KEY")
-print(os.getenv("SESSION"))
+while os.getenv("SESSION") == "None":
+    print(os.getenv("SESSION"))
+    sess.get_session()
+    sess.update_environment_variables(".env", session)
+    sess.instantiate_session()
 session = os.getenv("SESSION")
 
 #socket connection options - this is Betfair specific
@@ -42,7 +92,6 @@ with socket.create_connection((options['host'], options['port'])) as sock:
     with context.wrap_socket(sock, server_hostname=options['host']) as ssock:
         #authentication message
         auth_message = f'{{"op": "authentication", "appKey": "{app_key}", "session":"{session}"}}\r\n'
-        logger.info("sending stream exchange authentication")
         ssock.sendall(auth_message.encode())
 
         #subscription message
@@ -53,7 +102,6 @@ with socket.create_connection((options['host'], options['port'])) as sock:
         )
         print(market_subscription_message)
         ssock.sendall(market_subscription_message.encode())
-        logger.info("sending market subscription message")
 
 
         #set initial time and flag
@@ -64,7 +112,6 @@ with socket.create_connection((options['host'], options['port'])) as sock:
         while True:
             data = ssock.recv(1024)
             if not data:
-                logger.info("no response")
                 break
             json_str = data.decode()
             if "HEARTBEAT" not in json_str and "connection" not in json_str and "status" not in json_str:
@@ -73,28 +120,6 @@ with socket.create_connection((options['host'], options['port'])) as sock:
                 # Write the received JSON string to the file
                 with open("newStream.json", "a") as outfile:
                     if len(complete_json) > 0:
-                        logger.info("sending market snapshot to json")
                         outfile.write(complete_json)
                         complete_json = ""
 
-                '''      # Check if 10 seconds have passed
-                elapsed_time = time.time() - start_time
-                if elapsed_time >= 10:
-                    ten_seconds_passed = True
-                try:
-                    # true every 10 seconds
-                    if ten_seconds_passed:
-                        # Call the json reading to Kafka
-                        read_the_json(clk_value=clk, initialClk_value=initial_clk)
-
-                        # Reset the timer and flag
-                        complete_json = ""
-                        start_time = time.time()
-                        elapsed_time = 0
-                        ten_seconds_passed = False
-                except:
-                    logger.info(f"not adding:\n\t{complete_json}")
-                '''
-
-
-logger.info("connection closed")

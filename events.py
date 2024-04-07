@@ -1,7 +1,6 @@
 import urllib.request
 import json
 import os
-from CallerModules.logSetup import logger
 from datetime import datetime, timezone, timedelta
 import pandas as pd
 
@@ -32,10 +31,8 @@ class BetfairAPI:
 
     def get_event_types(self):
         event_type_req = '{"jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params": {"filter":{ }}, "id": 1}'
-        logger.info('Calling listEventTypes to get event Type ID')
         eventTypesResponse = self.call_api(event_type_req)
         eventTypeLoads = json.loads(eventTypesResponse)
-        logger.info(eventTypeLoads)
         eventTypeResults = eventTypeLoads['result']
         return eventTypeResults
 
@@ -45,7 +42,6 @@ class BetfairAPI:
                 return market['runners'][0]['selectionId']
             
     def getMarketCatalogue(self, listOfMarkets):
-        logger.info('Calling listMarketCatalouge to get runner info')
         market_catalogue_req = {
             "jsonrpc": "2.0",
             "method": "SportsAPING/v1.0/listMarketCatalogue",
@@ -73,7 +69,6 @@ class BetfairAPI:
         market_book_response = self.call_api(market_book_req)
         market_book_loads = json.loads(market_book_response)
         market_book_result = market_book_loads.get('result')
-        logger.info(f"pricing; {market_book_result}")
         if market_book_result is None:
             print('Exception from API-NG' + str(market_book_loads['error']))
             exit()
@@ -112,8 +107,7 @@ def get_event_markets(portal, event_type):
     for event in event_filter:
         event_type_id = event["id"]
         market_catalogue = portal.getMarketCatalogue(event_type_id)
-        logger.info(f"Market catalogue for event type ID {event_type_id}: {market_catalogue}")
-
+        
 def transform_event_dataframe (portal):
     next_markets = portal.market_df[["marketId", "marketStartTime", "totalMatched", "competition.name", "event.name", "eventType.name"]].sort_values(by="marketStartTime")
     next_markets["marketStartTime"] = next_markets["marketStartTime"].apply(transform_timestamp)

@@ -10,9 +10,11 @@ def upload_file_to_s3(file_path, bucket_name, object_name):
         pass #clears file
       
 
-# Replace these with your actual values
-file_path = 'newStream.json'
+file_path1 = 'newStream.json'
+file_path2 = 'unprocessedmarkets.json'
 bucket_name = 'betfair-json-bucket'
-object_name = 'Streams/newStream.json'
+object_name1 = 'Streams/newStream.json'
+object_name2 = 'MatchInfos/unprocessedmarkets.json'
 
-upload_file_to_s3(file_path, bucket_name, object_name)
+upload_file_to_s3(file_path1, bucket_name, object_name1)
+upload_file_to_s3(file_path2, bucket_name, object_name2)
