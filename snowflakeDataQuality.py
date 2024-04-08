@@ -37,12 +37,25 @@ def run_data_quality_tests():
     # 3. Check for outliers
     
     # Example test: Check for null values in a specific table column
-    query = "SELECT COUNT(*) FROM your_table WHERE your_column IS NULL"
-    result = conn.cursor().execute(query).fetchone()[0]
-    if result > 0:
-        print("Data quality test: Check for null values in your_column failed!")
+    last_time = 0
+    last_count = 0
+    with open('snowflakeCheckpoints.txt', 'r') as file:
+        # Read the entire contents of the file
+        last_time = file.readline()
+        # Print the contents of the file
+        last_count = file.readline()
+    query = "SELECT MAX(TIMESTAMP) FROM ONEBIGTABLE"
+    this_time = conn.cursor().execute(query).fetchone()[0]
+    query = "SELECT COUNT(*) FROM ONEBIGTABLE"
+    this_count = conn.cursor().execute(query).fetchone()[0]
+    if this_count <= last_count:
+        print("Data quality test: decreased row count in the table")
+    if this_time <= last_time:
+        print("Data quality test: no new data was added")
     else:
-        print("Data quality test: Check for null values in your_column passed!")
+        print("Data quality test: new data was added!")
+        # Open the text file in read mode
+
 
     # Add more data quality tests as needed...
 
