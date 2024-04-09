@@ -60,8 +60,6 @@ clk is updated on a market change
 using the two together, an image of market odds at a certain time can be referenced
 used as a cache, to only retrieve changes on the last image
 """
-initial_clk =""
-clk = "AAAAAAAA"
 
 #creating new session
 sess = BetfairLogin()
